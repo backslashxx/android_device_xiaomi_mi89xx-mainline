@@ -79,7 +79,7 @@ BOARD_KERNEL_CMDLINE += androidboot.first_stage_console=2
 endif
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := mi8953_a
+TARGET_OTA_ASSERT_DEVICE := mi8953_a,daisy
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
