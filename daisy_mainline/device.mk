@@ -41,10 +41,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_ODM)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b00 \
-    vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_ODM)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b01 \
-    vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_ODM)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b02 \
-    vendor/xiaomi/msm8953-common/proprietary/vendor/firmware/a506_zap.mdt:$(TARGET_COPY_OUT_ODM)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.mdt
+    $(LOCAL_PATH)/firmware/zap/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b00 \
+    $(LOCAL_PATH)/firmware/zap/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b01 \
+    $(LOCAL_PATH)/firmware/zap/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.b02 \
+    $(LOCAL_PATH)/firmware/zap/a506_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/msm8953/xiaomi/daisy/a506_zap.mdt 
 
 # Init
 PRODUCT_PACKAGES += \
