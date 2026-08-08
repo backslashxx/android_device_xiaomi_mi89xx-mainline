@@ -22,17 +22,8 @@ TARGET_SCREEN_DENSITY := 420
 # Kernel
 TARGET_DTB_LIST_WILDCARD := qcom/msm8953-xiaomi-daisy
 
-TARGET_KERNEL_CONFIG_EXT := \
-    $(DEVICE_PATH)/mi8953_a/kconfigs/config-postmarketos-qcom-msm8953.aarch64 \
-    $(DEVICE_PATH)/mi8953_a/kconfigs/basic.config \
-    kernel/mainline/configs/fragments/android-base-pre/common.config \
-    kernel/mainline/configs/fragments/android-base-pre/arm64.config \
-    kernel/configs/b/android-6.12/android-base.config \
-    kernel/mainline/configs/fragments/android-base-conditional/CONFIG_ARM64-y.config \
-    kernel/mainline/configs/fragments/common.config \
-    kernel/mainline/configs/fragments/y/fbcon.config \
-    kernel/mainline/configs/fragments/n/disable-clang-hardening-features.config \
-    kernel/mainline/configs/fragments/n/faster-build-time.config
+TARGET_KERNEL_CONFIG_EXT := $(DEVICE_PATH)/daisy_mainline/kernel_config
+
 TARGET_KERNEL_SOURCE := kernel/mainline/msm8953-mainline
 
 # Kernel modules
